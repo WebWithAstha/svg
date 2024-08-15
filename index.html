@@ -16,9 +16,95 @@
 
 <body>
     <div id="main">
-        <div class="w-full h-screen flex items-center justify-center">
+        <div class="w-full h-screen bg-rose-200 flex flex-col items-center justify-center">
 
-            <h1 class="text-[20vw]">Brooh</h1>
+            <svg class="w-[70vw] h-[20vw]">
+                <symbol id="text">
+                    <text class="text-[15vw] leading-none" text-anchor="middle" x="50%" y="80%">Bruhh</text>
+                </symbol>
+                <use xlink:href="#text"></use>
+            </svg>
+
+            <svg id="hoverSvg" class=" w-[11vw] h-[4vw]">
+                <text class="text-[3vw]" id="hover1" x="4%" y="85%">wooah</text>
+                <use link:href="#hover1"></use>
+            </svg>
+
+
+            <!-- <h1 class="text-[20vw]">Brooh</h1> -->
+        </div>
+        <div class="w-full h-[70vh] bg-sky-300">
+            <svg class="curvy" id="e3Fj1iePor41" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080" shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision" project-id="76e2b9642909481cb5e9e2f06481b3da"
+                export-id="0b872f66e6e243ee8e27b1c09f375551" cached="true">
+                <path
+                    d="M57.348437,215.019499c13.4451-17.92679,35.878013-38.876739,56.439803-49.843029c107.37196-57.26504,262.378322-30.38226,327.533502,76.2353c10.28037,16.82243,20.470572,46.350571,25.674442,62.612661c7.54439,23.57623,15.038341,74.283474,6.418611,98.418694C400.628345,606.245175,112.55831,307.2063,400.94119,246.49412c33.62781-7.07954,77.65218-9.96229,111.81176-5.08235c187.06841,26.72406,140.88356,367.65214,365.92941,391.34118c27.88006,2.93474,63.380581-4.678351,91.48235-12.70588c148.619048-42.4544,170.061873-222.549464,53.36471-261.74118-110.743393-37.192195-192.839988,40.056507-181.138341,153.269563c1.695832,16.40712,3.599757,22.999479,7.706695,39.989309c5.53859,22.912376,29.419806,63.024238,46.372826,81.188188c39.35328,42.16422,90.27153,71.88633,144.84706,88.94118c42.22154,13.19423,133.898901,7.501635,178.581214,0c65.279085-10.959591,242.949959-145.574361,259.476784-32.062497c15.668876,107.619177,152.018485,108.05525,214.30492,0" />
+            </svg>
+
+        </div>
+        <div class="w-full h-[30vh] relative bg-sky-300">
+
+            <div class="wave wave1 w-full h-[15vh] absolute bottom-2"></div>
+            <div class="wave wave2 w-full h-[15vh] absolute bottom-4"></div>
+            <div class="wave wave3 translate-y-[10%] w-full h-[15vh] absolute bottom-0"></div>
+        </div>
+        <div class="w-full h-[60vh] flex gap-6 items-center justify-center">
+            <svg class="loaderSvg" id="sqLoaderSvg1">
+                <rect></rect>
+            </svg>
+            <svg class="loaderSvg" id="sqLoaderSvg2">
+                <rect></rect>
+            </svg>
+            <svg id="sqLoaderSvg3">
+                <rect></rect>
+            </svg>
+        </div>
+        <div class="w-full flex items-center gap-8 justify-center h-[70vh]">
+            <svg id="shop" width="20vw" height="40vh" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M14.5 21.9913V18.5C14.5 17.5654 14.5 17.0981 14.299 16.75C14.1674 16.522 13.978 16.3326 13.75 16.201C13.4019 16 12.9346 16 12 16C11.0654 16 10.5981 16 10.25 16.201C10.022 16.3326 9.83261 16.522 9.70096 16.75C9.5 17.0981 9.5 17.5654 9.5 18.5V21.9913H14.5Z"
+                    fill="#1C274C" />
+                <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M5.73204 12C4.84126 12 4.05323 11.6239 3.5 11.0329V14C3.5 17.7712 3.5 19.6568 4.67157 20.8284C5.61466 21.7715 7.02043 21.9554 9.5 21.9913H14.5C16.9796 21.9554 18.3853 21.7715 19.3284 20.8284C20.5 19.6568 20.5 17.7712 20.5 14V11.034C19.9468 11.6244 19.1592 12 18.269 12C16.6973 12 15.3814 10.8091 15.225 9.24523L15.152 8.51733C15.3385 10.382 13.8742 12 12.0003 12C10.139 12 8.6819 10.4038 8.84499 8.55511L8.77598 9.24523C8.6196 10.8091 7.30367 12 5.73204 12ZM14.5 18.5V21.9913H9.5V18.5C9.5 17.5654 9.5 17.0981 9.70096 16.75C9.83261 16.522 10.022 16.3326 10.25 16.201C10.5981 16 11.0654 16 12 16C12.9346 16 13.4019 16 13.75 16.201C13.978 16.3326 14.1674 16.522 14.299 16.75C14.5 17.0981 14.5 17.5654 14.5 18.5Z"
+                    fill="#1C274C" />
+                <path
+                    d="M9.4998 2H14.4998L15.1515 8.51737C15.338 10.382 13.8737 12 11.9998 12C10.1259 12 8.6616 10.382 8.84806 8.51737L9.4998 2Z"
+                    fill="#1C274C" />
+                <path opacity="0.7"
+                    d="M3.33024 5.35133C3.50832 4.46093 3.59736 4.01573 3.7784 3.65484C4.15987 2.89439 4.84628 2.33168 5.66677 2.10675C6.05616 2 6.51017 2 7.4182 2H9.50051L8.77598 9.24527C8.6196 10.8091 7.30367 12 5.73204 12C3.80159 12 2.35373 10.2339 2.73232 8.34093L3.33024 5.35133Z"
+                    fill="#1C274C" />
+                <path opacity="0.7"
+                    d="M20.6703 5.35133C20.4922 4.46093 20.4031 4.01573 20.2221 3.65484C19.8406 2.89439 19.1542 2.33168 18.3337 2.10675C17.9443 2 17.4903 2 16.5823 2H14.5L15.2245 9.24527C15.3809 10.8091 16.6968 12 18.2685 12C20.1989 12 21.6468 10.2339 21.2682 8.34093L20.6703 5.35133Z"
+                    fill="#1C274C" />
+            </svg>
+
+            <svg id="mail" width="20vw" height="40vh" viewBox="0 -2.5 20 20" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                <title>email [#1572]</title>
+                <desc>Created with Sketch.</desc>
+                <defs>
+
+                </defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -922.000000)" fill="#000000">
+                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                            <path
+                                d="M294,774.474 L284,765.649 L284,777 L304,777 L304,765.649 L294,774.474 Z M294.001,771.812 L284,762.981 L284,762 L304,762 L304,762.981 L294.001,771.812 Z"
+                                id="email-[#1572]">
+
+                            </path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <svg id="mailRound" fill="#000000" width="20vw" height="40vh" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M22,5V9L12,13,2,9V5A1,1,0,0,1,3,4H21A1,1,0,0,1,22,5ZM2,11.154V19a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V11.154l-10,4Z" />
+            </svg>
         </div>
 
     </div>

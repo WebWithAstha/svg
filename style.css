@@ -2,22 +2,271 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-html,body{
-    width: 100%;
-}
-#main{
+
+html,
+body {
     width: 100%;
 }
 
-h1{
+#main {
+    width: 100%;
+}
 
+::selection {
+    background-color: rgb(67, 135, 156);
+    color: #671907;
+}
+
+
+/* font-family: "Matemasie", sans-serif; */
+
+svg {
     font-family: "Matemasie", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
 }
-h2{
-    font-family: "Roboto", sans-serif;
+
+svg #text text {
+    /* fill: #577457; */
+    fill:transparent;
+    stroke-width: 1vw;
+    /* stroke: #253a25; */
+    stroke: #910d37;
+    stroke-dasharray: 200;
+    stroke-linecap: round;
+    animation: fillAnime 2s linear backwards;
+    letter-spacing: 20px;
+    animation-fill-mode: forwards;
+    stroke-dashoffset: 400;
+}
+@keyframes fillAnime {
+    100%{
+        stroke-dasharray: 800;
+        stroke-dashoffset: 1600;
+    }
+}
+
+#hoverSvg text{
+    stroke-width: 1.2px;
+    fill: #800d1591;
+    stroke: rgb(68, 3, 3);
+    stroke-dasharray: 20;
+    stroke-linecap: round;
+    cursor: pointer;
+    
+    animation: strokeAnime 2s linear infinite;
+}
+
+
+@keyframes strokeAnime {
+    100%{
+        stroke-dashoffset: 40;
+    }
+}
+
+/* curve line svg */
+
+.curvy{
+    height: 100%;
+    width: 100%;
+}
+.curvy path{
+    stroke: #671907;
+    stroke-width: 5px;
+    stroke-linecap: round;
+    stroke-dasharray: 3580;
+    stroke-dashoffset: 3580;
+    fill: transparent;
+    height: 100%;
+    animation: drawAnime 6s linear forwards;
+
+}
+@keyframes drawAnime {
+    100%{
+    stroke-dashoffset: 0;
+
+    }
+}
+
+/* wave animation */
+
+
+.wave{
+    background: url('./wave.png');
+    background-size: 70vw 10vw;
+    overflow: hidden;
+}
+.wave1{
+    animation: flowAnime 5s linear infinite;
+    animation-delay: -7s;
+    opacity: .7;
+}
+.wave2{
+    animation: flowAnime2 5s linear infinite;
+    opacity: .2;
+}
+.wave3{
+    animation: flowAnime2 10s linear infinite;
+}
+
+@keyframes flowAnime {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 70vw;
+    }
+}
+@keyframes flowAnime2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -70vw;
+    }
+}
+@keyframes flowAnime3 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -70vw;
+    }
+}
+
+/* square svg loader */
+.loaderSvg{
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+}
+.loaderSvg rect{
+    width: 100px;
+    height: 100px;
+
+}
+#sqLoaderSvg{
+    width: 20vw;
+    height: 100px;
+    border-radius: 20%;
+}
+
+#sqLoaderSvg1 rect{
+    width: 100px;
+    height: 100px;
+    fill: transparent;
+    
+    stroke: black;
+    stroke-width: 50px;
+    stroke-linecap: round;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 200;
+    animation: loaderAnime 2s linear infinite;
+}
+
+@keyframes loaderAnime {
+    100%{
+        stroke-dashoffset: 0%;
+    }
+}
+
+
+#sqLoaderSvg2 rect{
+    width: 100px;
+    height: 100px;
+    fill: transparent;
+    
+    stroke: black;
+    stroke-width:50px;
+    stroke-dasharray: 50%;
+    stroke-linecap: round;
+    stroke-dashoffset: 100%;
+    animation: loaderAnime 2s linear infinite;
+}
+
+#sqLoaderSvg3{
+    width: 100px;
+    height: 100px;
+}
+
+#sqLoaderSvg3 rect{
+    width: 100px;
+    height: 100px;
+    fill: transparent;
+    
+    stroke: black;
+    stroke-width: 100px;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 50%;
+    animation: loaderAnime2 2s linear infinite;
+}
+
+@keyframes loaderAnime2 {
+    100%{
+        stroke-dashoffset: 250%;
+    }
+}
+
+
+/* complex svg animation */
+
+#shop{
+    /* background-color: #910d37; */
+    fill: transparent;
+    stroke: #671907;
+    
+    stroke-dasharray: 100;
+    animation: shopAnime 4s linear;
+    animation-delay: -2s;
+    /* display: none; */
+}
+#shop path{
+    fill: transparent;
+}
+
+@keyframes shopAnime {
+    to{
+        stroke-dashoffset: 200;
+    }
+}
+
+#mail{
+    /* fill: transparent; */
+
+    
+    /* stroke-dasharray: 10; */
+    /* animation-delay: -2s; */
+}
+
+#mail path{
+    stroke: #671907;
+    fill: transparent;
+    stroke-linecap: round;
+    stroke-dasharray: 70;
+    stroke-dashoffset: 70;
+    animation: mailAnime 4s linear forwards;
+}
+
+@keyframes mailAnime {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+#mailRound path{
+    stroke: #671907;
+    fill: transparent;
+    stroke-linecap: round;
+    stroke-dasharray: 70;
+    stroke-dashoffset: 70;
+    animation: mailAnime 4s linear forwards;
+}
+
+@keyframes mailAnime {
+    to{
+        stroke-dashoffset: 0;
+    }
 }
